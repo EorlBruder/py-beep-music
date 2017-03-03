@@ -7,4 +7,4 @@ pt4=[(E3,HALBE),(E3,VIERTEL),(F3,VIERTEL),(G3,VIERTEL),(G3,VIERTEL),(F3,VIERTEL)
 
 tune = pt1 + pt2 + pt3 + pt4
 
-play(tune)
+play(tune, 150)

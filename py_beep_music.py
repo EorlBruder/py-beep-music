@@ -122,9 +122,7 @@ A9 = 14080.000000
 As9 = 14917.240369
 B9 = 15804.265640
 
-SPEED = 150
-
-VIERTEL = 60000 / SPEED
+VIERTEL = 60000
 
 ACHTEL = VIERTEL / 2
 SECHZEHNTEL = ACHTEL / 2
@@ -135,8 +133,8 @@ GANZE = HALBE * 2
 
 PUNKTIERTE_VIERTEL = VIERTEL + ACHTEL
 
-def play(tune):
+def play(tune, speed):
 	cmd='beep -f 1 -l 10 '
 	for i,j in tune:
-		cmd=cmd + ' -n -f '+ str(i) + ' -l'+str(j)
+		cmd=cmd + ' -n -f '+ str(i) + ' -l'+str(j/speed)
 	os.system(cmd)
