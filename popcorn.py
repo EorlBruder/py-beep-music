@@ -5,5 +5,6 @@ pt2=[(C5,VIERTEL),(D5,VIERTEL),(Ds5,VIERTEL),(D5,VIERTEL),(Ds5,VIERTEL),(C5,VIER
 
 
 tune = pt1 + pt1 + pt2
+tune = tune + tune
 
 play(tune,240)
