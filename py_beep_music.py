@@ -133,8 +133,11 @@ GANZE = HALBE * 2
 
 PUNKTIERTE_VIERTEL = VIERTEL + ACHTEL
 
+STACCATO = 1
+LEGATO = 0
+
 def play(tune, speed=150):
 	cmd='beep -f 1 -l 10 '
-	for i,j in tune:
-		cmd=cmd + ' -n -f '+ str(i) + ' -l'+str(j/speed)
+	for i,j,k in tune:
+		cmd=cmd + ' -n -f '+ str(i) + ' -l'+str(j/speed-k*(speed/2)) + ' -n -f 1 -l'+str(speed/2)
 	os.system(cmd)
