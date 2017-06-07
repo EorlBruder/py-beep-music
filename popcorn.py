@@ -7,4 +7,4 @@ pt2=[(C5,VIERTEL,STACCATO),(D5,VIERTEL,STACCATO),(Ds5,VIERTEL,STACCATO),(D5,VIER
 tune = pt1 + pt1 + pt2
 tune = tune + tune
 
-play(tune,340)
+play(tune,300)
