@@ -140,5 +140,5 @@ def play(tune, speed=240):
 	cmd='beep -f 1 -l 10 '
 	speed = speed
 	for i,j,k in tune:
-		cmd=cmd + ' -n -f '+ str(i) + ' -l'+str(j/speed-k*(speed/2)) + ' -n -f 1 -l'+str(speed/2)
+		cmd=cmd + ' -n -f '+ str(i*2) + ' -l'+str(j/speed-k*(speed/2)) + ' -n -f 1 -l'+str(speed/2)
 	os.system(cmd)
